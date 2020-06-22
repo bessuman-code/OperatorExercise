@@ -17,11 +17,11 @@ namespace OperatorExercise
             Console.WriteLine("What is the radius of your circle");
             var num3 = double.Parse(Console.ReadLine());
             
-            var divide2numbers = DivideMethod(num1, num2);
+            var quotient = DivideMethod(num1, num2);
             var remainder = RemainderMethod(num1, num2);
             var area = AreaMethod(num3);
 
-            Console.WriteLine($"{num1}/{num2} is {divide2numbers} remainder {remainder}");
+            Console.WriteLine($"{num1}/{num2} is {quotient} remainder {remainder}");
             Console.WriteLine("What is the radius of your circle");
             Console.WriteLine($"{num3}");
             Console.WriteLine($"The area of a circle with radius of {num3} is {area}");
@@ -48,12 +48,12 @@ namespace OperatorExercise
 
             return num1 / num2;
         }
-        public static int QuotientMethod(int num1)
+        /*public static int QuotientMethod(int num1)
         {
             int a1 = 0;
             int a2 = 0;
             return num1 = DivideMethod(a1,a2);
-        }
+        }*/
         public static int RemainderMethod(int num1, int num2)
         {
 
