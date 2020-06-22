@@ -21,11 +21,43 @@ namespace OperatorExercise
             var remainder = RemainderMethod(num1, num2);
             var area = AreaMethod(num3);
 
+
+
+            //Thought Exercise
+
+            var i = 3;
+            var j = 4;
+            var k = ++i * j++;
+
             Console.WriteLine($"{num1}/{num2} is {quotient} remainder {remainder}");
             Console.WriteLine("What is the radius of your circle");
             Console.WriteLine($"{num3}");
             Console.WriteLine($"The area of a circle with radius of {num3} is {area}");
+            Console.WriteLine(k);
 
+            var r = new Random();
+            var favNumber = r.Next(1, 1000);
+            var helpGuess = 1 + favNumber;
+            Console.WriteLine($"Guess a number b/n from 1 to 1000");
+            Console.WriteLine($"Let me help you, it is 1 + that number {helpGuess}");
+            var userInput = int.Parse(Console.ReadLine());
+            
+
+            if (userInput == favNumber)
+            {
+                Console.WriteLine($"Success {favNumber}");
+
+
+            } 
+            else
+            {
+                Console.WriteLine($"Wrong {favNumber}");
+            }
+            
+
+
+            
+            
 
         }
         public static int AddMethod(int num1, int num2)
